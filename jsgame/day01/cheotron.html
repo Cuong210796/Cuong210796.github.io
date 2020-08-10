@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First game</title>
+    <canvas id="myCanvas" width=1000 height="600" style="background-color: bisque;"></canvas>
+</head>
+
+<body>
+    <canvas id="myCanvas">
+
+    </canvas>
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const context = canvas.getContext("2d");
+        let height = canvas.height;
+        let width = canvas.width;
+        let radius = 100;
+
+
+
+
+        context.beginPath();
+        context.rect(0, 0, width, height);
+        context.fillStyle = 'white';
+        context.fill();
+        context.lineWidth = 10;
+        context.strokeStyle = 'black';
+        context.stroke();
+
+        context.beginPath();
+        context.arc(width/2, height/2, radius, 0, 2*Math.PI, false);
+        context.fillStyle = 'red';
+        context.fill();
+        context.lineWidth = 5;
+        context.strokeStyle = 'black';
+        context.stroke();
+        
+
+        var pos_x = radius*Math.sin(Math.PI/4) + width/2;
+        var pos_y = radius*Math.cos(Math.PI/4) + height/2;
+        context.beginPath();
+        context.moveTo(pos_x, pos_y);
+        context.lineWidth = 5;
+        context.strokeStyle = 'black';
+        context.lineTo(width-pos_x, height-pos_y);
+        context.stroke();
+
+        var pos_x = radius*Math.sin(3*Math.PI/4) + width/2;
+        var pos_y = radius*Math.cos(3*Math.PI/4) + height/2;
+        context.beginPath();
+        context.moveTo(pos_x, pos_y);
+        context.lineWidth = 5;
+        context.strokeStyle = 'black';
+        context.lineTo(width-pos_x, height-pos_y);
+        context.stroke();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+.first_paragraph{
+    color:black;
+    float: left;
+    width: 33%;
+}
+#first_paragraph{
+    background: red;
+}
+#second_paragraph{
+    background: blueviolet;
+}
+p{
+    height: 50px;
+    width: 700px;
+    font-size: 40px;
+    color: rosybrown;
+    padding-left: 100px;
+}

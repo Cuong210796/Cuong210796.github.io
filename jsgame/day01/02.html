@@ -1,0 +1,30 @@
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Game</title>
+    </head>
+    
+    <body>
+        <canvas id="canvas" width="600" height="400" style="border: 1px solid black;"></canvas>
+        <script>
+            const canvas = document.getElementById("canvas");
+            const context = canvas.getContext("2d");
+            context.moveTo(0, 0);
+            context.lineWidth = 60;
+            context.lineTo(600, 400);
+            context.strokeStyle = 'red';
+            context.stroke();
+    
+            const context2 = canvas.getContext("2d");
+            context2.moveTo(600, 0);
+            context2.lineWidth = 60;
+            context2.lineTo(0, 400);
+            context2.strokeStyle = 'red';
+            context2.stroke();
+        </script>
+    </body>
+    
+    </html>

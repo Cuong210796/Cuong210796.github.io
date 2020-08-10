@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caro</title>
+</head>
+
+<body>
+    <canvas id="Canvas" width="800" height="800" style="border:2px solid black;"></canvas>
+    <script>
+        var c = document.getElementById("Canvas");
+        var ctx = c.getContext("2d");
+
+        for (i = 0; i < 16; i++) {
+            for (j = 0; j < 16; j++) {
+                ctx.moveTo(0, 50 * j);
+                ctx.lineTo(800, 50 * j);
+                ctx.stroke();
+
+                ctx.moveTo(50 * i, 0);
+                ctx.lineTo(50 * i, 800);
+                ctx.stroke();
+                var left = 0;
+                for (var a = 0; a < 16; a++) {
+                    for (var b = 0; b < 16; b += 2) {
+                        startX = b * 50;
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

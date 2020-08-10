@@ -1,0 +1,21 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 200px;
+    height: 60px;
+    background-color: cadetblue;
+    text-align: center;
+    color: #000;
+    border: none;
+    text-transform: uppercase;
+    transition: all .2s;
+}
+
+button:hover {
+    background-color: chartreuse;
+}

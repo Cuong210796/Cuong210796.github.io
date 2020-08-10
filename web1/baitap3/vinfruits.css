@@ -1,0 +1,33 @@
+.outer-img{
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+}
+.outer-img3{
+    width: 200px;
+    height: 200px;
+}
+.div-outer-img1:hover, .div-outer-img2:hover, .div-outer-img3:hover,.div-outer-img4:hover{
+    border: solid 2px yellowgreen;
+}
+.div-outer-img1:after{
+    content: "sầu riêng musang King Malaysia 650.000đ";
+    font-size: 30px;
+}
+.div-outer-img3{
+    float: left;
+    margin: 100px;
+    text-align: center;
+}
+.div-outer-img1,.div-outer-img2{
+    float: left;
+    text-align: center;
+}
+.div-outer-img2{
+    margin: 10px;
+}
+.div-outer-img4{
+    float: left;
+    margin: 20px;
+    text-align: center;
+}

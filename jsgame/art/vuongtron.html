@@ -1,0 +1,87 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscribed squares are circular</title>
+    <style>
+        #canvas {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
+</head>
+<html>
+
+<body>
+    <canvas id="canvas"></canvas>
+    <script>
+        let canvas = document.getElementById("canvas");
+        let c = canvas.getContext('2d');
+
+        canvas.width = innerWidth;
+        canvas.height = innerHeight;
+
+        class Circle {
+            constructor(centerx, centery, radius, color) {
+                this.centerx = centerx;
+                this.centery = centery;
+                this.color = color;
+                this.radius = radius
+            };
+
+            draw() {
+                c.beginPath();
+                c.arc(this.centerx, this.centery, this.radius, 0, Math.PI * 2, false);
+                c.strokeStyle = this.color;
+                c.stroke();
+                c.closePath();
+            }
+        }
+
+        class Square {
+            constructor(x, y, width, color) {
+                this.x = x;
+                this.y = y;
+                this.width = width;
+                this.color = color;
+
+            };
+
+            draw() {
+                c.beginPath();
+                c.rect(this.x, this.y, this.width, this.width);
+                c.strokeStyle = this.color;
+                c.stroke();
+                c.closePath();
+            }
+        }
+
+        let centerx = canvas.width / 2;
+        let centery = canvas.height / 2;
+        var squareArray = [];
+        var circleArray = [];
+        let radius = 200;
+
+
+        for (let i = 0; i < 3; i++) {
+
+            var circle = new Circle(centerx, centery, radius / (Math.pow(Math.sqrt(2), i)), 'yellow ');
+
+            circleArray.push(circle)
+
+            var square = new Square(centerx - radius / (Math.pow(Math.sqrt(2), i + 1)), centery - radius / (Math.pow(Math.sqrt(2), i + 1)), (radius * Math.sqrt(2)) / (Math.pow(Math.sqrt(2), i)), 'red')
+
+            squareArray.push(square);
+
+        }
+        circleArray.forEach(circle => circle.draw());
+        squareArray.forEach(square => square.draw());
+    </script>
+</body>
+
+</html>

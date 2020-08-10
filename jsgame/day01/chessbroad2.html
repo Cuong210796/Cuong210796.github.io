@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess broad</title>
+</head>
+
+<body>
+    <canvas id="Canvas" width="800" height="800" style="border:2px solid #d3d3d3;"></canvas>
+    <script>
+        var c = document.getElementById("Canvas");
+        var ctx = c.getContext("2d");
+
+        for (i = 0; i < 8; i++) {
+            for (j = 0; j < 8; j++) {
+                ctx.moveTo(0, 100 * j);
+                ctx.lineTo(800, 100 * j);
+                ctx.stroke();
+
+                ctx.moveTo(100 * i, 0);
+                ctx.lineTo(100 * i, 800);
+                ctx.stroke();
+                var left = 0;
+                for (var a = 0; a < 8; a++) {
+                    for (var b = 0; b < 8; b += 2) {
+                        startX = b * 100;
+                        if (a % 2 == 0) startX = (b + 1) * 100;
+                        ctx.fillRect(startX + left, (a * 100), 100, 100);
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

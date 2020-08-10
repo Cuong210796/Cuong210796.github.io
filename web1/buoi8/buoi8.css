@@ -1,0 +1,11 @@
+.outer-flex{
+    /* display: flex; */
+    height: 500px;
+    border: solid 1px rebeccapurple;
+}
+.flex-item{
+    width: 100px;
+    height: 100px;
+    background: red;
+    border: solid 1px black;
+}

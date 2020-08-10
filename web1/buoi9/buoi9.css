@@ -1,0 +1,33 @@
+.container {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border: solid 1px black;
+    margin: 10px;
+}
+
+.box1 {
+    order: 3;
+    flex-basis: 500px;
+}
+
+.box2 {
+    order: 1;
+    flex-basis: 700px;
+    flex-shrink: 1;
+}
+
+.box3 {
+    order: 4;
+}
+
+.box4 {
+    order: 2;
+}

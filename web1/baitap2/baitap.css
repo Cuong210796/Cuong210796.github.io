@@ -1,0 +1,41 @@
+.first_paragraph{
+    padding-left: 500px;
+    margin: 30;
+    font-size: 20px;
+}
+.second_paragraph{
+    padding-left: 600px;
+    margin: 10px;
+}
+h1{
+    padding-left: 500px;
+    margin: 20px;
+}
+#first_one{
+    color: rgb(107, 159, 189);
+}
+.three_paragraph{
+    padding-left: 50px;
+    font-size: 20px;
+}
+.one{
+    padding-left: 30px;
+    padding-right: 100px;
+    font-size: 17px;
+    margin: 0;
+}
+.two{
+    padding-left: 100px;
+    margin: 0;
+    font-size: 17px;
+}
+.three{
+    padding-left: 500px;
+    margin: 10;
+    font-size: 17px;
+}
+.four{
+    padding-left: 570px;
+    margin: 10;
+    font-size: 17px;
+}

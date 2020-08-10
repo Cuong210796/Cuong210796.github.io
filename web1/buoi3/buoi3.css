@@ -1,0 +1,13 @@
+.outer-img{
+    width: 200px;
+    height: 200px;
+}
+.div-outer-img:hover{
+    border: solid 2px black;
+}
+.div-outer-img:after{
+    content: "TCCT";
+}
+.div-outer-img{
+    float: left;
+}

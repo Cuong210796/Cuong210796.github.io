@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>triangle</title>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+
+    <script>
+        var canvas = document.getElementById("canvas");
+        var c = canvas.getContext('2d');
+
+        canvas.width = innerWidth * 0.8;
+        canvas.height = innerHeight * 0.8;
+
+        c.font = "30px Comic Sans MS";
+        c.fillText("A", canvas.width / 2.5, canvas.height / 25);
+        c.fillText("B", canvas.width / 45, canvas.height / 1.2);
+        c.fillText("C", canvas.width / 2, canvas.height / 1.2);
+
+        class Triangle {
+            constructor(A, B, C) {
+                this.A = A;
+                this.B = B;
+                this.C = C;
+                this.A1 = {
+                    x: (B.x + C.x) / 2,
+                    y: (B.y + C.y) / 2
+                };
+                this.B1 = {
+                    x: (A.x + C.x) / 2,
+                    y: (A.y + C.y) / 2
+                };
+                this.C1 = {
+                    x: (B.x + A.x) / 2,
+                    y: (B.y + A.y) / 2
+                };
+            }
+            drawDashLine() {
+                c.beginPath();
+                c.setLineDash([5, 3])
+                c.strokeStyle = '#4472C4'
+                c.moveTo(this.A.x, this.A.y);
+                c.lineTo(this.A1.x, this.A1.y);
+                c.stroke();
+
+                c.beginPath();
+                c.moveTo(this.B.x, this.B.y);
+                c.lineTo(this.B1.x, this.B1.y);
+                c.stroke();
+
+                c.beginPath();
+                c.moveTo(this.C.x, this.C.y);
+                c.lineTo(this.C1.x, this.C1.y);
+                c.stroke();
+            }
+
+            draw() {
+                c.beginPath();
+                c.lineWidth = 3;
+                c.moveTo(this.A.x, this.A.y);
+                c.lineTo(this.B.x, this.B.y);
+                c.stroke();
+
+                c.beginPath();
+                c.moveTo(this.B.x, this.B.y);
+                c.lineTo(this.C.x, this.C.y);
+                c.stroke();
+
+                c.beginPath();
+                c.moveTo(this.A.x, this.A.y);
+                c.lineTo(this.C.x, this.C.y);
+                c.stroke();
+
+                this.drawDashLine();
+            }
+        }
+
+        class Point {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+                return {
+                    x: this.x,
+                    y: this.y
+                }
+            }
+        }
+        let A = new Point(500, 30)
+        let B = new Point(50, 500)
+        let C = new Point(600, 500)
+
+        let triangle = new Triangle(A, B, C)
+
+        triangle.draw();
+    </script>
+
+</body>
+
+</html>

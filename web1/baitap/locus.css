@@ -1,0 +1,249 @@
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                background: #f9f9f9;
+                overflow-x: hidden;
+                overflow-y: auto;
+            }
+            
+            .bar-fixed {
+                background: #fff;
+                border-bottom: thin solid #e1e1e1;
+                box-shadow: 0 10px 10px rgba(0, 0, 0, .05);
+                width: 100vw;
+                height: 60px;
+                top: 0;
+                left: 0;
+                z-index: 999;
+                position: fixed;
+            }
+            
+            .wrapper {
+                width: 1192px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 16px 0;
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-content: center;
+                height: 60px;
+                box-sizing: border-box;
+            }
+            
+            .wrapper h1 a {
+                display: block;
+                white-space: nowrap;
+            }
+            
+            .lotus-logo {
+                width: 33px;
+                height: 30px;
+                fill: #cd0f32;
+                stroke: transparent;
+                position: relative;
+                top: -10px;
+            }
+            
+            a {
+                color: #1f9ffc;
+                font: inherit;
+            }
+            
+            .lotus-text {
+                width: 68px;
+                height: 22px;
+                fill: #002d64;
+                stroke: transparent;
+                position: relative;
+                top: -14px;
+            }
+            
+            .icon {
+                display: inline-block;
+            }
+            
+            .version-info {
+                margin-left: 16px;
+                background: #efeff4;
+                border-radius: 20px;
+                padding: 4px 8px;
+                float: right;
+                line-height: 0.5;
+            }
+            
+            .wrapper .version-info .version-info-text {
+                font: normal 15px/19px SF;
+                color: #111;
+                position: relative;
+                top: -1px;
+            }
+            
+            .wrapper .version-info svg {
+                position: relative;
+                top: 2px;
+            }
+            
+            .left,
+            .right {
+                display: flex;
+            }
+            
+            .login {
+                color: #1f9ffc;
+                border-style: solid;
+                border-radius: 50px;
+                border-width: 2px;
+                padding: 0px 20px 20px 20px;
+            }
+            
+            .svg {
+                stroke: #000;
+                stroke-width: 5;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                fill: none;
+            }
+            
+            .registration {
+                color: white;
+                border-style: solid;
+                border-radius: 50px;
+                margin-left: 20px;
+                background-color: #1f9ffc;
+                padding: 2px 25px 27px 25px;
+            }
+            
+            .menu {
+                margin-left: 100px;
+                margin-top: 150px;
+                background: #fff;
+                border-bottom: thin solid #e1e1e1;
+                box-shadow: 0 10px 10px rgba(0, 0, 0, .05);
+                width: 200px;
+                height: 300px;
+                top: 0;
+                left: 0;
+                z-index: 999;
+                position: fixed;
+            }
+            
+            .lotus-portal {
+                background: #f9f9f9;
+                overflow-x: hidden;
+                overflow-y: auto;
+            }
+            
+            .AG,
+            .app {
+                display: flex;
+            }
+            
+            .Google {
+                display: flex;
+                margin-left: 15px;
+            }
+            
+            .mid {
+                margin-left: 500px;
+                margin-top: 150px;
+                background: #fff;
+                border-bottom: thin solid #e1e1e1;
+                box-shadow: 0 10px 10px rgba(0, 0, 0, .05);
+                width: 500px;
+                height: 150px;
+                top: 0;
+                left: 0;
+                z-index: 999;
+                position: fixed;
+            }
+            
+            .post-left,
+            .list-options {
+                display: flex;
+            }
+            
+            .up {
+                margin-right: 5px;
+                color: #4c5053;
+                border-style: solid;
+                border-radius: 5px;
+                border-width: 0.5px;
+                padding: 1px 5px 1px 5px;
+            }
+            
+            .share {
+                font-size: 18px;
+                color: #fff;
+                border-style: solid;
+                border-radius: 5px;
+                border-width: 0.5px;
+                background-color: #1f9ffc;
+                padding: 1px 5px 5px 5px;
+            }
+            
+            .btn-li#btn-login-header.guest-token .guest-token-total svg {
+                stroke: #1f9ffc;
+            }
+            
+            .btn-li a .icon {
+                margin-right: 5px;
+            }
+            
+            .icon.icon-token {
+                width: 16px;
+                height: 16px;
+                fill: none;
+                stroke: #16161f;
+            }
+            
+            ul {
+                list-style: none;
+            }
+            
+            .lotus-post .icon {
+                background: url(https://statics.lotuscdn.vn/embed/prod/1593656844925/images/58ed5caf7e45482f97057466fd89512f.png);
+                background-repeat: no-repeat;
+                display: inline-block;
+            }
+            
+            .lotus-post .icon-photo {
+                width: 24px;
+                height: 22px;
+                background-position: -12px -7px;
+            }
+            
+            .lotus-post .icon-video {
+                width: 28px;
+                height: 22px;
+                background-position: -56px -7px;
+            }
+            
+            .lotus-post .icon-link {
+                width: 24px;
+                height: 22px;
+                background-position: -164px -7px;
+            }
+            
+            .lotus-post {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+            }
+            
+            .list-options li {
+                position: relative;
+                margin-right: 15px;
+                cursor: pointer;
+            }
+            
+            .post-right span {
+                cursor: pointer;
+            }
+            
+            .right span,
+            .right h5 {
+                cursor: pointer;
+            }

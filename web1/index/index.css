@@ -1,0 +1,45 @@
+.d1{
+    padding-top: 20px;
+    padding-left: 200px;
+    color: rgb(60, 210, 30);
+    size: 70px;
+}
+.d2{
+    color: rebeccapurple;
+}
+.img{
+    margin: 30px;
+}
+.open{
+    margin-left: 100px;
+    padding-top: 20px;
+    border: solid 2px blue;
+}
+.open,.career,.skill{
+    float: left;
+}
+.career{
+    margin: 50px;
+    border: solid 2px blue;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.clear{
+    clear: both;
+}
+b{
+    height: 30px;
+    width: 100px;
+    font-size: 30px;
+    color: rosybrown;
+    padding-left: 30px;
+}
+.skill{
+    border: solid 2px blue;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.font{
+    color: blueviolet;
+}

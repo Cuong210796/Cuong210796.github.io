@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caro Chess</title>
+    <script type="text/javascript" src="game.js"></script>
+    <style type="text/css">
+        input[type=text] {
+            width: 20px;
+        }
+        
+        button {
+            width: 30px;
+            height: 30px;
+        }
+        
+        #play {
+            width: 80px;
+            height: 30px;
+        }
+        
+        .sssss {
+            display: none;
+            width: 70%;
+            height: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="caro"></p>
+    <input type="button" value="X" onclick="changex();">
+    <input type="button" value="O" onclick="changeo();">
+    <input type="text" id="row" game="row">row
+    <input type="text" id="colume" name="colume">colume
+    <button id="play" onclick="playgame()">Play</button>
+    <div id="main">
+
+    </div>
+    <script></script>
+</body>
+
+</html>

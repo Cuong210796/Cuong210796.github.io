@@ -1,0 +1,24 @@
+h1{
+    color: red;
+    padding-left: 500px;
+    font-size: 40px;
+}
+h2{
+    color: darkblue;
+    padding-left: 500px;
+    font-size: 40px;
+}
+.first_paragraph{
+    color: cornflowerblue;
+    padding-left: 100px;
+    padding-right: 200px;
+    margin: 0;
+    font-size: 20px;
+}
+.second_paragraph{
+    color: cornflowerblue;
+    padding-left: 50px;
+    padding-right: 200px;
+    margin: 0;
+    font-size: 20px;
+}

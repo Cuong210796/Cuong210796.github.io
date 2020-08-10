@@ -1,0 +1,221 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTVN</title>
+
+</head>
+
+<body>
+    <canvas id="myCanvas" height="700" width="1200" style="background-color: white"></canvas>
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const c = canvas.getContext("2d");
+        const width = canvas.width;
+        const height = canvas.height;
+
+        const square_size = 50;
+        const number_square_width = width / square_size;
+        const number_square_height = height / square_size;
+
+        let allMove = [];
+        let currentPlayer = 1;
+
+        function resetGrid() {
+            c.clearRect(0, 0, width, height)
+            for (let i = 0; i <= number_square_width; i++) {
+                c.beginPath();
+                c.moveTo(i * square_size, 0);
+                c.lineTo(i * square_size, height);
+                c.stroke();
+            }
+            for (let i = 0; i <= number_square_height; i++) {
+                c.beginPath();
+                c.moveTo(0, i * square_size)
+                c.lineTo(width, i * square_size)
+                c.stroke()
+            }
+        }
+
+        function resetMove() {
+            for (let i = 0; i < number_square_height; i++) {
+                allMove.push([]);
+                for (let j = 0; j < number_square_width; j++) {
+                    allMove[i].push(0);
+                }
+            }
+            console.log("allMove = ", allMove)
+        }
+
+        function drawWinLine(x1, y1, x2, y2, type) {
+            if (type == 1) {
+                c.beginPath();
+                c.lineWidth = 5;
+                c.strokeStyle = "black"
+                c.moveTo(x1 * square_size, (y1 + 0.5) * square_size)
+                c.lineTo((x2 + 1) * square_size, (y2 + 0.5) * square_size)
+                c.stroke()
+            }
+            if (type == 2) {
+                c.beginPath();
+                c.lineWidth = 5;
+                c.strokeStyle = "black"
+                c.moveTo((x1 + 0.5) * square_size, y1 * square_size)
+                c.lineTo((x2 + 0.5) * square_size, (y2 + 1) * square_size)
+                c.stroke()
+            }
+            if (type == 3) {
+                c.beginPath();
+                c.lineWidth = 5;
+                c.strokeStyle = "black"
+                c.moveTo(x1 * square_size, y1 * square_size)
+                c.lineTo((x2 + 1) * square_size, (y2 + 1) * square_size)
+                c.stroke()
+            }
+        }
+
+        function checkInsideMap(pos_x, pos_y) {
+            if (pos_x < 0 || pos_x >= number_square_width) {
+                return false
+            }
+            if (pos_y < 0 || pos_y >= number_square_height) {
+                return false
+            }
+            return true
+        }
+
+        function checkRow(pos_x, pos_y) {
+            for (let i = pos_y - 4; i <= pos_y; i++) {
+                if (checkInsideMap(pos_x, i)) {
+                    let check = true;
+                    for (let j = i + 1; j <= i + 4; j++) {
+                        if (allMove[pos_x][i] != allMove[pos_x][j]) {
+                            check = false;
+                            break;
+                        }
+                    }
+                    if (check) {
+                        drawWinLine(i, pos_x, i + 4, pos_x, 1)
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        function checkColumn(pos_x, pos_y) {
+            for (let i = pos_x - 4; i <= pos_x; i++) {
+                if (checkInsideMap(i, pos_y)) {
+                    let check = true;
+                    for (let j = i + 1; j <= i + 4; j++) {
+                        if (allMove[i][pos_y] != allMove[j][pos_y]) {
+                            check = false;
+                            break;
+                        }
+                    }
+                    if (check) {
+                        drawWinLine(pos_y, i, pos_y, i + 4, 2)
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+
+        function checkDiagonal(pos_x, pos_y) {
+            for (let i = -4; i <= 0; i++) {
+                if (checkInsideMap(pos_x + i, pos_y + i)) {
+                    let check = true;
+                    for (let j = 1; j <= 4; j++) {
+                        if (allMove[pos_x + i][pos_y + i] != allMove[pos_x + i + j][pos_y + i + j]) {
+                            check = false;
+                            break;
+                        }
+                    }
+                    if (check) {
+                        drawWinLine(pos_y + i, pos_x + i, pos_y + i + 4, pos_x + i + 4, 3)
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        function checkMove(pos_x, pos_y) {
+            console.log("allMove =  ", allMove)
+            if (checkRow(pos_x, pos_y)) {
+                return true;
+            }
+            if (checkColumn(pos_x, pos_y)) {
+                return true;
+            }
+            if (checkDiagonal(pos_x, pos_y)) {
+                return true;
+            }
+            return false;
+        }
+
+        function draw(player, xPosition, yPosition) {
+            //gia tri tren mang gan nguoc lai
+            allMove[yPosition][xPosition] = player;
+
+            //ve hinh
+            if (player == 1) {
+                c.save();
+                c.translate((xPosition + 0.5) * square_size, (yPosition + 0.5) * square_size)
+
+                c.beginPath();
+                c.lineWidth = 5;
+                c.strokeStyle = "blue"
+                c.moveTo(-20, -20)
+                c.lineTo(20, 20)
+                c.stroke()
+
+                c.beginPath();
+                c.lineWidth = 5;
+                c.strokeStyle = "blue"
+                c.moveTo(20, -20)
+                c.lineTo(-20, 20)
+                c.stroke()
+
+                c.restore()
+            } else {
+                c.beginPath();
+                c.arc((xPosition + 0.5) * square_size, (yPosition + 0.5) * square_size, square_size * 0.3, 0, Math.PI * 2, false)
+                c.lineWidth = 5;
+                c.strokeStyle = "red";
+                c.stroke()
+            }
+        }
+
+
+        function getClickPosition(e) {
+            var xPosition = Math.floor(e.clientX / square_size);
+            var yPosition = Math.floor(e.clientY / square_size);
+
+            let min_x = xPosition * square_size + 0.1 * square_size;
+            let max_x = xPosition * square_size + 0.9 * square_size;
+            let min_y = yPosition * square_size + 0.1 * square_size;
+            let max_y = yPosition * square_size + 0.9 * square_size;
+
+            if (e.clientX >= min_x && e.clientX <= max_x && e.clientY >= min_y && e.clientY <= max_y) {
+                if (allMove[yPosition][xPosition] == 0) {
+                    draw(currentPlayer, xPosition, yPosition);
+                    if (checkMove(yPosition, xPosition)) {
+                        console.log("Ván đấu kết thúc!!!")
+                    }
+                    currentPlayer = -currentPlayer;
+                }
+            }
+        }
+
+        addEventListener("click", getClickPosition);
+
+        resetGrid()
+        resetMove()
+    </script>
+</body>
+
+</html>

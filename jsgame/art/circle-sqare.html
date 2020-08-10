@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>circle-sqare</title>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+
+    <script>
+        var canvas = document.getElementById("canvas");
+        var c = canvas.getContext('2d');
+
+        canvas.width = innerWidth * 0.9;
+        canvas.height = innerHeight * 0.9;
+
+
+        class Circle {
+            constructor(x, y, radius, color) {
+                this.x = x;
+                this.y = y;
+                this.radius = radius;
+                this.color = color;
+            }
+            draw() {
+                c.beginPath();
+                c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+                c.fillStyle = this.color;
+                c.fill();
+                c.stroke();
+                c.closePath();
+            }
+        }
+
+        class Square {
+            constructor(x, y, width, color) {
+                this.x = x;
+                this.y = y;
+                this.width = width;
+                this.color = color;
+            }
+            draw() {
+                c.beginPath();
+                c.rect(this.x, this.y, this.width, this.width)
+                c.fillStyle = this.color;
+                c.fill();
+                c.stroke();
+                c.closePath();
+
+            }
+        }
+
+        let x = canvas.width / 2;
+        let y = canvas.height / 2;
+        var squareArray = [];
+
+        let radius = 200;
+
+        for (let i = 0; i < 3; i++) {
+
+            var circle = new Circle(x, y, radius / (Math.pow(Math.sqrt(2), i)), 'yellow');
+
+            squareArray.push(circle);
+
+            var square = new Square(x - radius / (Math.pow(Math.sqrt(2), i + 1)), y - radius / (Math.pow(Math.sqrt(2), i + 1)), (radius * Math.sqrt(2)) / (Math.pow(Math.sqrt(2), i)), 'red')
+
+            squareArray.push(square);
+
+        }
+        // spuareArray.forEach(circle => circle.draw());
+        squareArray.forEach(square => square.draw());
+    </script>
+</body>
+
+</html>

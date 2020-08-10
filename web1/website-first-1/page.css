@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+}
+
+.name-page {
+    display: flex;
+    justify-content: center;
+    color: tomato;
+    font-size: 30px;
+}
+
+hr {
+    width: 80%;
+    margin-left: 10%;
+    border: solid 2px rgb(49, 226, 43);
+}
+
+.inform {
+    padding-left: 30px;
+}
+
+.introduce {
+    font-size: 20px;
+}
+
+.img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.end {
+    margin-left: 43%;
+}

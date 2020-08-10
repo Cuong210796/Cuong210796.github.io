@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Factorial(n) {
+            if (n == 0 | n == 1) {
+                return 1;
+            } else {
+                return n * Factorial(n - 1);
+            }
+        }
+        console.log(Factorial(5)); // [ 1, 2, 3, 4, 5 ]
+
+        function LT(x, n) {
+            if (n < 1) {
+                return 1;
+            } else {
+                return x * LT(x, n - 1);
+            }
+        }
+        console.log(LT(2, 5));
+
+        function Tong(n) {
+            if (n < 1) {
+                return 0;
+            } else {
+                return n + Tong(n - 1);
+            }
+        }
+        console.log(Tong(10));
+
+
+        // var var1 = 0;
+        // var var2 = 1;
+        // var var3;
+
+        // var num = 10;
+
+        // document.write(var1 + "<br />");
+        // document.write(var2 + "<br />");
+
+        // for (var i = 3; i <= num; i++) {
+        //     var3 = var1 + var2;
+        //     var1 = var2;
+        //     var2 = var3;
+
+        //     document.write(var3 + "<br />");
+        // }
+
+        function Fibonaci(n) {
+            if (n < 2) {
+                return n;
+            } else {
+                return Fibonaci(n - 1) + Fibonaci(n - 2);
+            }
+        }
+        console.log(Fibonaci(10));
+    </script>
+</body>
+
+</html>

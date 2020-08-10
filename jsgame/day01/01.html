@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game đầu tiên</title>
+</head>
+<body>
+    <h1><canvas id="mycanvas" width="600" height="500" style="background_color : black;"></canvas></h1>
+</body>
+<script>
+    const canvas = document.getElementById("mycanvas");
+    const context = canvas.getContext("2d");
+    context.moveTo(0, 0);
+    context.linewidth = 10;
+    context.lineTo(300, 300);
+    context.strokeStyle = 'red';
+    context.stroke();
+    
+        
+    }
+</script>
+</html>
