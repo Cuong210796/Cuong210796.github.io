@@ -304,10 +304,6 @@ body {
     z-index: -1;
 }
 
-.toggle:checked+label:after {
-    left: 0;
-}
-
 .toggle.toggle-left+label:after {
     left: 100%;
 }
@@ -325,6 +321,10 @@ body {
     color: #fff;
     -webkit-transition: color 200ms;
     transition: color 200ms;
+}
+
+.toggle:checked+label:after {
+    left: 0;
 }
 
 label {
