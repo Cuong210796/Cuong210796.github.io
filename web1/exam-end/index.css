@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Impact, fantasy;";
+    /* border: double 5px black; */
+    background-image: linear-gradient(rgb(253, 249, 168), rgb(255, 255, 255));
+}
+
+.option-bar {
+    margin-top: 30px;
+    display: flex;
+    background-image: linear-gradient(rgb(153, 209, 211), rgb(255, 255, 255));
+    border-radius: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.option-bar-right {
+    display: flex;
+    margin-left: 100px;
+}
+
+.click-icon {
+    margin-right: 25px;
+    border-radius: 50px;
+    align-items: center;
+}
+
+p {
+    font-weight: bold;
+    margin-right: 20px;
+    transform: scale(1);
+    transition: all 1s;
+}
+
+p:hover {
+    color: red;
+}
+
+.transform:hover {
+    transform: scale(1.2);
+}
+
+.option-bar-left {
+    display: flex;
+    margin-left: 560px;
+    margin-right: 200px;
+}
+
+.link {
+    padding-top: 10px;
+    padding-left: 30px;
+    margin-right: 15px;
+}
+
+.about-me {
+    margin-top: 30px;
+    text-align: center;
+    color: #585858;
+}
+
+.a-bit {
+    text-decoration: underline;
+    text-decoration-style: double;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.download {
+    cursor: pointer;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 50px;
+    display: block;
+    background-color: rgb(124, 144, 212);
+    font-weight: bold;
+    margin: 20px auto;
+    outline: none;
+}
+
+.introduce {
+    background-image: linear-gradient(#D8D8D8, #FAFAFA);
+    display: flex;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 50px;
+}
+
+.introduce-right {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    color: darkcyan;
+}
+
+.introduce-left {
+    margin-left: 250px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.ava {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid 1px black;
+}
+
+.hire-me {
+    cursor: pointer;
+    margin-top: 30px;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 50px;
+    display: block;
+    background-color: rgb(124, 144, 212);
+    font-weight: bold;
+    outline: none;
+}
+
+.hire-me:active,
+.download:active,
+.link img:active {
+    background-color: lightcoral;
+}
+
+.skill {
+    background-image: linear-gradient(#D8D8D8, #FAFAFA);
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 50px;
+    padding-top: 5px;
+    margin-bottom: 30px;
+}
+
+.skills {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: double;
+    color: #585858;
+    font-size: 30px;
+}
+
+.allskills {
+    width: 60%;
+    display: flex;
+    margin-left: 270px;
+    padding-bottom: 50px;
+}
+
+.ui {
+    border-radius: 10px;
+    margin-right: 100px;
+    padding: 10px 10px 30px 10px;
+    background-color: burlywood;
+}
+
+.my {
+    border-radius: 10px;
+    margin-right: 100px;
+    padding: 10px 10px 30px 10px;
+    background-color: burlywood;
+}
+
+.j {
+    border-radius: 10px;
+    padding: 10px 10px 30px 10px;
+    background-color: burlywood;
+}
+
+.ui:hover,
+.my:hover,
+.j:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    transition: all 2s;
+}

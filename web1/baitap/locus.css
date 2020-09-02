@@ -65,6 +65,13 @@
                 display: inline-block;
             }
             
+            #icon-token {
+                width: 16px;
+                height: 16px;
+                fill: none;
+                stroke: #1f9ffc;
+            }
+            
             .version-info {
                 margin-left: 16px;
                 background: #efeff4;
@@ -99,7 +106,7 @@
                 padding: 0px 20px 20px 20px;
             }
             
-            .svg {
+            .login .icon-token {
                 stroke: #000;
                 stroke-width: 5;
                 stroke-linecap: round;
@@ -117,23 +124,74 @@
             }
             
             .menu {
-                margin-left: 100px;
-                margin-top: 150px;
+                margin-left: 200px;
+                margin-top: 120px;
                 background: #fff;
                 border-bottom: thin solid #e1e1e1;
                 box-shadow: 0 10px 10px rgba(0, 0, 0, .05);
-                width: 200px;
+                width: 220px;
                 height: 300px;
                 top: 0;
                 left: 0;
                 z-index: 999;
                 position: fixed;
+                margin-bottom: 30px;
+                padding: 15px 0 0 0;
             }
             
-            .lotus-portal {
-                background: #f9f9f9;
-                overflow-x: hidden;
-                overflow-y: auto;
+            #home {
+                width: 20px;
+                height: 20px;
+                fill: #333;
+                stroke: transparent;
+            }
+            
+            .menu-trending-news {
+                width: 16px;
+                height: 16px;
+                fill: #aaa;
+                stroke: transparent;
+            }
+            
+            .menu-trending-group {
+                width: 16px;
+                height: 16px;
+                fill: #aaa;
+                stroke: transparent;
+            }
+            
+            #giai-tri {
+                width: 16px;
+                height: 16px;
+                fill: #aaa;
+                stroke: transparent;
+            }
+            
+            #icon-infor {
+                width: 18px;
+                height: 18px;
+                fill: #aaa;
+                stroke: transparent;
+            }
+            
+            #icon-external-link {
+                width: 10px;
+                height: 10px;
+                fill: #aaa;
+                stroke: transparent;
+            }
+            
+            .icon-holder {
+                margin-left: 20px;
+            }
+            
+            .category-home {
+                margin: 20px 20px 20px 0px;
+            }
+            
+            .AG {
+                width: 250px;
+                padding-top: 30px;
             }
             
             .AG,
@@ -146,9 +204,21 @@
                 margin-left: 15px;
             }
             
+            #icon-playstore,
+            #icon-apple {
+                width: 16px;
+                height: 18px;
+                fill: #888;
+                stroke: transparent;
+            }
+            
+            h6 {
+                padding-left: 10px;
+            }
+            
             .mid {
                 margin-left: 500px;
-                margin-top: 150px;
+                margin-top: 120px;
                 background: #fff;
                 border-bottom: thin solid #e1e1e1;
                 box-shadow: 0 10px 10px rgba(0, 0, 0, .05);
