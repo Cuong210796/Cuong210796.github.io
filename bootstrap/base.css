@@ -1,0 +1,85 @@
+                                           :root {
+                                              --primary-color: #ee4d2d;
+                                              --white-color: #fff;
+                                              --black-color: #000;
+                                              --text-color: #333;
+                                              --header-height: 120px;
+                                              --header-navbar-height: 34px;
+                                              --header-with-search-height: calc(var(--header-height) - var(--header-navbar-height));
+                                          }
+                                          
+                                          * {
+                                              box-sizing: inherit;
+                                          }
+                                          
+                                          html {
+                                              font-size: 62.5%;
+                                              line-height: 1.6rem;
+                                              font-family: 'Roboto', sans-serif;
+                                              box-sizing: border-box;
+                                          }
+                                          
+                                          p {
+                                              font-size: 1.6rem;
+                                          }
+                                          
+                                          .grid {
+                                              width: 1200px;
+                                              max-width: 100%;
+                                              margin: 0 auto;
+                                          }
+                                          
+                                          .grid__full-width {
+                                              width: 100%;
+                                          }
+                                          /* test */
+                                          
+                                          @keyframes fadeIn {
+                                              from {
+                                                  opacity: 0;
+                                              }
+                                              to {
+                                                  opacity: 1;
+                                              }
+                                          }
+                                          
+                                          @keyframes headerGrowth {
+                                              from {
+                                                  opacity: 0;
+                                                  transform: scale(0);
+                                              }
+                                              to {
+                                                  opacity: 1;
+                                                  transform: scale(1);
+                                              }
+                                          }
+                                          /* button style */
+                                          
+                                          .btn {
+                                              min-width: 120px;
+                                              height: 36px;
+                                              margin-top: 80px;
+                                              margin-left: 200px;
+                                              color: black;
+                                              border-radius: 3px;
+                                              font-size: 12px;
+                                              border: 0.01px solid burlywood;
+                                              cursor: pointer;
+                                              background-color: white;
+                                          }
+                                          
+                                          .btnn {}
+                                          
+                                          .btn:hover {
+                                              background-color: burlywood;
+                                          }
+                                          
+                                          .btn.btn--primary {
+                                              margin-left: 4px;
+                                              color: var(--white-color);
+                                              background-color: var(--primary-color);
+                                          }
+                                          
+                                          .btn.btn--primary:hover {
+                                              background-color: red;
+                                          }
