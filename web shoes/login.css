@@ -1,33 +1,166 @@
-/* Mobile: width < 740px
-Tabllet: width >= 740px and width < 1024px
-PC: width >= 1024px */
-
 * {
     box-sizing: border-box;
 }
 
-.All {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    /* justify-content: center;
-    align-self: center; */
+body {
+    width: 100vw;
+    height: 100vh;
     background-color: #4ACFBB;
+    display: flex;
+    align-items: center;
 }
 
-.frames {
+.menu {
     width: 1200px;
     height: 600px;
     background-color: #DCF4F1;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
     border-radius: 50px;
-    margin: auto;
+    display: flex;
+    margin: 0 auto;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    width: 650px;
+    height: 600px;
 }
 
 .img {
+    width: 550px;
+    height: 400px;
     margin: auto;
 }
 
-img {
+.right {
     width: 550px;
-    height: 400px;
+    height: 600px;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    width: 80%;
+    height: 80%;
+    background-color: #FFFFFF;
+    margin: auto;
+}
+
+h1,
+span {
+    color: #323E72;
+}
+
+input[type="text"] {
+    width: 440px;
+    height: 50px;
+    border-radius: 6px;
+}
+
+.user-name {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pass {
+    margin-bottom: 20px;
+}
+
+.forgot {
+    color: #4ACFBB;
+}
+
+.login {
+    margin-top: 20px;
+    padding: 20px 197px;
+    border-radius: 6px;
+    background-color: #4ACFBB;
+    font-weight: bold;
+    color: white;
+}
+
+.login:active {
+    background-color: white;
+    color: black;
+}
+
+.or {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.grid-container {
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.fb {
+    width: 200px;
+    height: 50px;
+    background-color: #1976D2;
+    margin-left: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-fb {
+    color: white;
+}
+
+.log-gg {
+    color: black;
+}
+
+.gg {
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    margin-left: 20px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* bỏ dấu gạch chân ở thẻ a */
+
+a {
+    text-decoration: none;
+}
+
+.fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fb-icon {
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 3px;
+}
+
+.gg-icon {
+    font-size: 25px;
+    color: greenyellow;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 3px;
 }

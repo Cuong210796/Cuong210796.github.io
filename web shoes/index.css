@@ -71,7 +71,6 @@
     
     .category {
         margin-top: 10px;
-        /* display: inline-flex; */
         width: 80%;
         height: 50px;
         background-color: black;
@@ -137,4 +136,9 @@
         cursor: pointer;
         margin-left: 20px;
         margin-top: 3px;
+    }
+    /* bỏ dấu gạch chân ở thẻ a */
+    
+    a {
+        text-decoration: none;
     }
