@@ -9,35 +9,41 @@
     <link rel="icon" href="/img/iconweb.jpg" sizes="32x32">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.css">
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
     <div>
-        <div class="menu">
-            <div class="menu-left">
+        <div class="grid-container menu">
+            <div class="col-md-3 menu-left">
                 <img src="/img/iconshoes.png" alt="icon">
                 <h2>Sneaker Shop</h2>
             </div>
-            <div class="menu-mid">
+            <div class="col-md-6 menu-mid">
                 <form action="">
                     <input type="text" name="search" placeholder="Search...">
                 </form>
                 <button class="TK">Tìm kiếm</button>
             </div>
-            <div class="menu-right">
-                <a href="login.html"><button>Đăng nhập</button></a>
-                <div class="header__cart-wrap">
-                    
-                </div>
+            <div class="col-md-3 menu-right">
+                <a href="login.html"><button>Đăng nhập | Đăng ký</button></a>
+                <a href="cart.html">
+                    <div class="header__cart-wrap">
+                        <i class="header__cart-icon fas fa-cart-plus"></i>
+                    </div>
+                </a>
             </div>
         </div>
-        <div class="category">
-            <div class="All">
+        <div class="grid-container category">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 All">
                 <a href="index.html">
                     <h6>Tất cả sản phẩm</h6>
                 </a>
             </div>
-            <div class="select-input">
+            <div class="col-md-4 select-input">
                 <a href="">
                     <h6>Thương hiệu</h6>
                 </a>

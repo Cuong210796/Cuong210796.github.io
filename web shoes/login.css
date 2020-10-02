@@ -1,0 +1,33 @@
+/* Mobile: width < 740px
+Tabllet: width >= 740px and width < 1024px
+PC: width >= 1024px */
+
+* {
+    box-sizing: border-box;
+}
+
+.All {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* justify-content: center;
+    align-self: center; */
+    background-color: #4ACFBB;
+}
+
+.frames {
+    width: 1200px;
+    height: 600px;
+    background-color: #DCF4F1;
+    border-radius: 50px;
+    margin: auto;
+}
+
+.img {
+    margin: auto;
+}
+
+img {
+    width: 550px;
+    height: 400px;
+}
