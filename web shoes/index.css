@@ -1,5 +1,6 @@
     * {
         box-sizing: border-box;
+        margin: 0;
     }
     
     body {
@@ -36,6 +37,7 @@
         display: flex;
         height: 50%;
         margin: auto 0px auto 50px;
+        align-items: center;
     }
     
     input[type="text"] {
@@ -65,8 +67,12 @@
     }
     
     .menu-right {
-        align-self: center;
+        /* align-self: center; */
         display: flex;
+        width: 16%;
+        margin: auto;
+        text-align: center;
+        position: relative;
     }
     
     .All {
@@ -129,6 +135,7 @@
     
     .category {
         display: flex;
+        background-color: #CEF6EC;
     }
     
     .trademark {
@@ -187,4 +194,11 @@
     
     .row img {
         width: 100%;
+        padding-bottom: 10px;
+    }
+    
+    .nameshoes:hover {
+        color: rgb(240, 86, 137);
+        transition: 1s;
+        cursor: pointer;
     }
