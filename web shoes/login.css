@@ -159,8 +159,29 @@ a {
 
 .gg-icon {
     font-size: 25px;
-    color: greenyellow;
+    color: rgb(111, 111, 245);
     cursor: pointer;
     margin-left: 20px;
     margin-top: 3px;
+}
+
+
+/* Mobile : width < 740px */
+
+@media only screen and (max-width: 46.1875em) {
+    .left {
+        display: none;
+    }
+}
+
+
+/* Tablet : width >= 740px và < 1024px */
+
+@media only screen and (min-width:46.25em) and (max-width:63.9375em) {
+    .left {
+        display: none;
+    }
+    .right {
+        width: 87%;
+    }
 }
