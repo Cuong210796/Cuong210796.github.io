@@ -30,7 +30,7 @@
     .menu-left img {
         width: 100px;
         height: 100px;
-        margin-left: 50px;
+        margin-left: 100px;
     }
     
     .menu-mid {
@@ -135,7 +135,7 @@
     
     .category {
         display: flex;
-        background-color: #CEF6EC;
+        background-color: #AEB6BF;
     }
     
     .trademark {
@@ -145,6 +145,22 @@
         background-color: rgb(0 123 255 / 50%);
         position: fixed;
         border-radius: 10px;
+    }
+    
+    .tab {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .tab li {
+        background-color: #b14c38;
+        padding: 10px;
+        color: #FFF;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-right: 20px;
+        width: 200px;
+        text-align: center;
     }
     
     li span {
@@ -167,6 +183,11 @@
     a {
         text-decoration: none;
     }
+    /* sửa thẻ thuộc tính hover mặc định của thẻ a */
+    
+    a:hover {
+        text-decoration: none !important;
+    }
     
     section {
         position: relative;
@@ -185,7 +206,7 @@
     .row {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 50px;
+        margin-top: 30px;
     }
     
     .row .col-md-3 {
@@ -201,4 +222,9 @@
         color: rgb(240, 86, 137);
         transition: 1s;
         cursor: pointer;
+    }
+    
+    .container h3 {
+        font-style: italic;
+        color: purple;
     }

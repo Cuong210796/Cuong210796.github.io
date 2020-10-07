@@ -1,0 +1,17 @@
+@media (max-width: 740px) {
+    .introduction img {
+        height: 220px;
+        margin: auto;
+    }
+    .info b {
+        padding-left: 20px;
+    }
+    .introduction {
+        height: 500px;
+    }
+    .info {
+        margin: auto;
+    }
+}
+
+;
