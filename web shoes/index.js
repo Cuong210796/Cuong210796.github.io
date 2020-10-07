@@ -26,6 +26,7 @@ function changeProductList(type, element) {
             document.getElementById('puma').style.display = 'none';
             document.getElementById('vans').style.display = 'none';
             document.getElementById('converse').style.display = 'none';
+            document.getElementById('line1').style.display = 'block';
             document.getElementById('line2').style.display = 'none';
             document.getElementById('line3').style.display = 'none';
             document.getElementById('line4').style.display = 'none';
@@ -42,6 +43,7 @@ function changeProductList(type, element) {
             document.getElementById('vans').style.display = 'none';
             document.getElementById('converse').style.display = 'none';
             document.getElementById('line1').style.display = 'none';
+            document.getElementById('line2').style.display = 'block';
             document.getElementById('line3').style.display = 'none';
             document.getElementById('line4').style.display = 'none';
             document.getElementById('line5').style.display = 'none';
@@ -58,6 +60,7 @@ function changeProductList(type, element) {
             document.getElementById('converse').style.display = 'none';
             document.getElementById('line1').style.display = 'none';
             document.getElementById('line2').style.display = 'none';
+            document.getElementById('line3').style.display = 'block';
             document.getElementById('line4').style.display = 'none';
             document.getElementById('line5').style.display = 'none';
             document.getElementById('line6').style.display = 'none';
@@ -74,6 +77,7 @@ function changeProductList(type, element) {
             document.getElementById('line1').style.display = 'none';
             document.getElementById('line2').style.display = 'none';
             document.getElementById('line3').style.display = 'none';
+            document.getElementById('line4').style.display = 'block';
             document.getElementById('line5').style.display = 'none';
             document.getElementById('line6').style.display = 'none';
             document.getElementById('line7').style.display = 'none';
@@ -90,6 +94,7 @@ function changeProductList(type, element) {
             document.getElementById('line2').style.display = 'none';
             document.getElementById('line3').style.display = 'none';
             document.getElementById('line4').style.display = 'none';
+            document.getElementById('line5').style.display = 'block';
             document.getElementById('line6').style.display = 'none';
             document.getElementById('line7').style.display = 'none';
             break;
@@ -106,6 +111,7 @@ function changeProductList(type, element) {
             document.getElementById('line3').style.display = 'none';
             document.getElementById('line4').style.display = 'none';
             document.getElementById('line5').style.display = 'none';
+            document.getElementById('line6').style.display = 'block';
             document.getElementById('line7').style.display = 'none';
             break;
 
@@ -122,6 +128,7 @@ function changeProductList(type, element) {
             document.getElementById('line4').style.display = 'none';
             document.getElementById('line5').style.display = 'none';
             document.getElementById('line6').style.display = 'none';
+            document.getElementById('line7').style.display = 'block';
             break;
     }
 }
