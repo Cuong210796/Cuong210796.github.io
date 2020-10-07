@@ -1,15 +1,24 @@
 function changeProductList(type, element) {
-    let tabs = document.getElementsByClassName('name-item');
+    let tabs = document.getElementsByClassName('tab-item');
     for (i = 0; i < tabs.length; i++) {
-        tabs[i].style.background = 'none';
+        tabs[i].style.background = '#b14c38';
     }
-    element.style.background = 'white';
-    // element.style.width = 'fit-content';
-    // element.style.padding = "5px 5px 5px 5px";
+    element.style.background = '#ee4d2d';
+
 
     document.getElementById(type).style.display = 'block';
 
     switch (type) {
+        case 'all-item':
+            document.getElementById('adidas').style.display = 'block';
+            document.getElementById('nike').style.display = 'block';
+            document.getElementById('mlb').style.display = 'block';
+            document.getElementById('gucci').style.display = 'block';
+            document.getElementById('puma').style.display = 'block';
+            document.getElementById('vans').style.display = 'block';
+            document.getElementById('converse').style.display = 'block';
+            break;
+
         case 'adidas':
             document.getElementById('nike').style.display = 'none';
             document.getElementById('mlb').style.display = 'none';
@@ -17,6 +26,12 @@ function changeProductList(type, element) {
             document.getElementById('puma').style.display = 'none';
             document.getElementById('vans').style.display = 'none';
             document.getElementById('converse').style.display = 'none';
+            document.getElementById('line2').style.display = 'none';
+            document.getElementById('line3').style.display = 'none';
+            document.getElementById('line4').style.display = 'none';
+            document.getElementById('line5').style.display = 'none';
+            document.getElementById('line6').style.display = 'none';
+            document.getElementById('line7').style.display = 'none';
             break;
 
         case 'nike':
@@ -26,6 +41,12 @@ function changeProductList(type, element) {
             document.getElementById('puma').style.display = 'none';
             document.getElementById('vans').style.display = 'none';
             document.getElementById('converse').style.display = 'none';
+            document.getElementById('line1').style.display = 'none';
+            document.getElementById('line3').style.display = 'none';
+            document.getElementById('line4').style.display = 'none';
+            document.getElementById('line5').style.display = 'none';
+            document.getElementById('line6').style.display = 'none';
+            document.getElementById('line7').style.display = 'none';
             break;
 
         case 'mlb':
@@ -35,6 +56,12 @@ function changeProductList(type, element) {
             document.getElementById('puma').style.display = 'none';
             document.getElementById('vans').style.display = 'none';
             document.getElementById('converse').style.display = 'none';
+            document.getElementById('line1').style.display = 'none';
+            document.getElementById('line2').style.display = 'none';
+            document.getElementById('line4').style.display = 'none';
+            document.getElementById('line5').style.display = 'none';
+            document.getElementById('line6').style.display = 'none';
+            document.getElementById('line7').style.display = 'none';
             break;
 
         case 'gucci':
@@ -44,6 +71,12 @@ function changeProductList(type, element) {
             document.getElementById('puma').style.display = 'none';
             document.getElementById('vans').style.display = 'none';
             document.getElementById('converse').style.display = 'none';
+            document.getElementById('line1').style.display = 'none';
+            document.getElementById('line2').style.display = 'none';
+            document.getElementById('line3').style.display = 'none';
+            document.getElementById('line5').style.display = 'none';
+            document.getElementById('line6').style.display = 'none';
+            document.getElementById('line7').style.display = 'none';
             break;
 
         case 'puma':
@@ -53,6 +86,12 @@ function changeProductList(type, element) {
             document.getElementById('nike').style.display = 'none';
             document.getElementById('vans').style.display = 'none';
             document.getElementById('converse').style.display = 'none';
+            document.getElementById('line1').style.display = 'none';
+            document.getElementById('line2').style.display = 'none';
+            document.getElementById('line3').style.display = 'none';
+            document.getElementById('line4').style.display = 'none';
+            document.getElementById('line6').style.display = 'none';
+            document.getElementById('line7').style.display = 'none';
             break;
 
         case 'vans':
@@ -62,6 +101,12 @@ function changeProductList(type, element) {
             document.getElementById('puma').style.display = 'none';
             document.getElementById('nike').style.display = 'none';
             document.getElementById('converse').style.display = 'none';
+            document.getElementById('line1').style.display = 'none';
+            document.getElementById('line2').style.display = 'none';
+            document.getElementById('line3').style.display = 'none';
+            document.getElementById('line4').style.display = 'none';
+            document.getElementById('line5').style.display = 'none';
+            document.getElementById('line7').style.display = 'none';
             break;
 
         case 'converse':
@@ -71,6 +116,12 @@ function changeProductList(type, element) {
             document.getElementById('puma').style.display = 'none';
             document.getElementById('vans').style.display = 'none';
             document.getElementById('nike').style.display = 'none';
+            document.getElementById('line1').style.display = 'none';
+            document.getElementById('line2').style.display = 'none';
+            document.getElementById('line3').style.display = 'none';
+            document.getElementById('line4').style.display = 'none';
+            document.getElementById('line5').style.display = 'none';
+            document.getElementById('line6').style.display = 'none';
             break;
     }
 }

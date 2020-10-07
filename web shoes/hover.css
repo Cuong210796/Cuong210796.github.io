@@ -25,3 +25,7 @@
 #preda:hover {
     content: url(https://assets.adidas.com/images/w_600,f_auto,q_auto/d6d16cefa6764f598142abb900891ba0_9366/Predator_Mutator_20.1_Low_Firm_Ground_Boots_White_FW9182_010_hover_standard.jpg);
 }
+
+#dcv:hover {
+    content: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQrQLhsG4amP5EO3bd0pADkUr9BRlPxYbNMTQ&usqp=CAU);
+}

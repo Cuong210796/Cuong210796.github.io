@@ -41,252 +41,361 @@
             <div class="trademark">
                 <ul>
                     <h5>Thương hiệu</h5>
-                    <a href="adidas.html">
-                        <li class="Adidas">
-                            <span>
+                    <li class="Adidas tab-item" onclick="changeProductList('adidas', this)">
+                        <span>
                             <img class="icon-trademark" src="img/adidas.png" alt="icon">
                         </span>
-                            <span>Adidas</span>
-                        </li>
-                    </a>
-                    <a href="nike.html">
-                        <li class="Nike">
-                            <span>
+                        <span>Adidas</span>
+                    </li>
+                    <li class="Nike tab-item" onclick="changeProductList('nike', this)">
+                        <span>
                             <img class="icon-trademark" src="img/230_Nike_logo-512.webp" alt="icon">
                         </span>
-                            <span>Nike</span>
-                        </li>
-                    </a>
-                    <a href="mlb.html">
-                        <li class="MLB">
-                            <span>
+                        <span>Nike</span>
+                    </li>
+                    <li class="MLB tab-item" onclick="changeProductList('mlb', this)">
+                        <span>
                             <img class="icon-trademark" src="img/29831-5-mlb-file.png" alt="icon">
                         </span>
-                            <span>MLB</span>
-                        </li>
-                    </a>
-                    <a href="gucci.html">
-                        <li class="Gucci">
-                            <span>
+                        <span>MLB</span>
+                    </li>
+                    <li class="Gucci tab-item" onclick="changeProductList('gucci', this)">
+                        <span>
                             <img class="icon-trademark" src="img/gucci-3-555345.png" alt="icon">
                         </span>
-                            <span>Gucci</span>
-                        </li>
-                    </a>
-                    <a href="puma.html">
-                        <li class="Puma">
-                            <span>
+                        <span>Gucci</span>
+                    </li>
+                    <li class="Puma tab-item" onclick="changeProductList('puma', this)">
+                        <span>
                             <img class="icon-trademark" src="img/puma.png" alt="icon">
                         </span>
-                            <span>Puma</span>
-                        </li>
-                    </a>
-                    <a href="vans.html">
-                        <li class="Vans">
-                            <span>
+                        <span>Puma</span>
+                    </li>
+                    <li class="Vans tab-item" onclick="changeProductList('vans', this)">
+                        <span>
                             <img class="icon-trademark" src="img/vans-202702.png" alt="icon">
                         </span>
-                            <span>Vans</span>
-                        </li>
-                    </a>
-                    <a href="converse.html">
-                        <li class="Converse">
-                            <span>
+                        <span>Vans</span>
+                    </li>
+                    <li class="Converse tab-item" onclick="changeProductList('converse', this)">
+                        <span>
                             <img class="icon-trademark" src="img/converse-202549.png" alt="icon">
                         </span>
-                            <span>Converse</span>
-                        </li>
-                    </a>
+                        <span>Converse</span>
+                    </li>
                 </ul>
             </div>
             <section>
                 <div class="container">
                     <ul class="tab">
-                        <li class="tab-item">Phổ biến</li>
-                        <li class="tab-item">Mới nhất</li>
-                        <li class="tab-item">Bán chạy</li>
+                        <li class="tab-item active" onclick="changeProductList('all-item', this)">Tất cả sản phẩm</li>
+                        <li class="tab-item" onclick="changeProductList('mlb', this)">Phổ biến</li>
+                        <li class="tab-item" onclick="changeProductList('nike', this)">Mới nhất</li>
+                        <li class="tab-item" onclick="changeProductList('mlb', this)">Bán chạy</li>
                     </ul>
-                    <h3>Adidas</h3>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img id="NMD" src="https://assets.adidas.com/images/w_600,f_auto,q_auto/189b449050ef49b1aa68a8ba010163e6_9366/NMD_R1_Shoes_White_D96635_01_standard.jpg" alt="img">
-                            <span class="nameshoes">NMD_R1 SHOES<br>3,400,000₫</span>
+                    <div id="all-item">
+                        <div id="adidas">
+                            <h3>Adidas</h3>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img id="NMD" src="https://assets.adidas.com/images/w_600,f_auto,q_auto/189b449050ef49b1aa68a8ba010163e6_9366/NMD_R1_Shoes_White_D96635_01_standard.jpg" alt="img">
+                                    <span class="nameshoes">NMD_R1 SHOES</span><br>
+                                    <span> 3,400,000₫</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img id="Ultra" src="https://assets.adidas.com/images/w_600,f_auto,q_auto/6f205ef691f44ebbb018ab65012539b0_9366/Giay_UltraBoost_20_Mau_hong_FV8358_01_standard.jpg" alt="img">
+                                    <span class="nameshoes">UltraBoost 20 SHOES</span><br>
+                                    <span> 5,000,000₫</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="https://assets.adidas.com/images/h_320,f_auto,q_auto:sensitive,fl_lossy/25e1bdfc35444efea10aabb1016e1972_9366/Beyonce_Superstar_Platform_Shoes_White_FY7730_01_standard.jpg" alt="img">
+                                    <span class="nameshoes">BEYONCÉ SUPERSTAR PLATFORM SHOES</span><br>
+                                    <span>4,800,000₫</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img id="super" src="https://assets.adidas.com/images/h_320,f_auto,q_auto:sensitive,fl_lossy/ae4f0c19774f4cf9a2baac2100e4a6cf_9366/Superstar_Up_Shoes_Black_FW3699_01_standard.jpg" alt="img">
+                                    <span class="nameshoes">SUPERSTAR UP SHOES</span><br>
+                                    <span>3,200,000₫</span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img id="slides" src="https://img.yes24.vn/Upload/ProductImage/2019/2010023_L.jpg" alt="img">
+                                    <span class="nameshoes">ADILETTE SHOWER SLIDES</span><br>
+                                    <span>480,000₫</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img id="MC" src="https://assets.adidas.com/images/w_600,f_auto,q_auto/7e78f6ca102a4ba8a2e8ab9d013e9870_9366/Giay_3MC_x_Disney_Sport_Goofy_Mau_djo_FV9881_01_standard.jpg" alt="img">
+                                    <span class="nameshoes">3MC X DISNEY SPORT GOOFY SHOES</span><br>
+                                    <span> 1,800,000₫</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img id="edge" src="https://media.sssports.com/2000x2000/media/catalog/product/4/0/4051043576997_2.jpg" alt="img">
+                                    <span class="nameshoes">EDGE XT SHOESS</span><br>
+                                    <span> 2,800,000₫</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img id="preda" src="https://assets.adidas.com/images/w_600,f_auto,q_auto/4291e6a7770a4ac88a73ab9700b4282b_9366/Predator_Mutator_20.1_Low_Firm_Ground_Boots_White_FW9182_01_standard.jpg" alt="img">
+                                    <span class="nameshoes">PREDATOR MUTATOR 20.1 LOW FIRM GROUND BOOTS</span><br>
+                                    <span> 4,500,000₫</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-3">
-                            <img id="Ultra" src="https://assets.adidas.com/images/w_600,f_auto,q_auto/6f205ef691f44ebbb018ab65012539b0_9366/Giay_UltraBoost_20_Mau_hong_FV8358_01_standard.jpg" alt="img">
-                            <span class="nameshoes">UltraBoost 20 SHOES<br>5,000,000₫</span>
+
+                        <div id="line1">
+                            <br>
+                            <hr style="border-width: 3px;">
+                            <br>
                         </div>
-                        <div class="col-md-3">
-                            <img src="https://assets.adidas.com/images/h_320,f_auto,q_auto:sensitive,fl_lossy/25e1bdfc35444efea10aabb1016e1972_9366/Beyonce_Superstar_Platform_Shoes_White_FY7730_01_standard.jpg" alt="img">
-                            <span class="nameshoes">BEYONCÉ SUPERSTAR PLATFORM SHOES<br>4,800,000₫</span>
+
+                        <div id="nike">
+                            <h3>Nike</h3>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="https://cdn.shopify.com/s/files/1/1626/5391/products/IMG_9329.jpg?v=1571439532" alt="img">
+                                    <span class="nameshoes">Crepslocker Nike Air Jordan 1 UNC Patent Blue Chill & White Sneaker W</span><br>
+                                    <span> 3,300,000₫</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="https://myshoes.vn/image/cache/data/Giay-Nike-Air-Max-270-Nam-Trang-Xanh-01-800x800_0.jpg" alt="img">
+                                    <span class="nameshoes">Nike Air Max 270</span><br>
+                                    <span>2,900,000₫</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="https://giaygiare.vn/upload/sanpham/large/nike-air-more-uptempo-supreme-do-trang-nam-nu.jpg" alt="img">
+                                    <span class="nameshoes">Nike Air Uptempo Supreme Red White</span><br>
+                                    <span> 2,900,000₫</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="https://thesneakerhouse.com/wp-content/uploads/2018/08/giay-nike-air-max-97-ultra-17.jpg" alt="img">
+                                    <span class="nameshoes">Nike Air Max 97</span><br>
+                                    <span> 4,500,000₫</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="https://i.pinimg.com/originals/1f/28/6c/1f286c2d684ffba177f64354b708c92b.png" alt="img">
+                                    <span class="nameshoes">Nike x Travis Scott Air Force 1 Low 'Cactus Jack' sneakers</span><br>
+                                    <span>20,500,000₫</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="https://thesneakerhouse.com/wp-content/uploads/2018/08/giay-nike-air-max-97-ultra-17.jpg" alt="img">
+                                    <span class="nameshoes">Nike x Travis Scott Air Force 1 Low 'Cactus Jack' sneakers</span><br>
+                                    <span>20,500,000₫</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-3">
-                            <img id="super" src="https://assets.adidas.com/images/h_320,f_auto,q_auto:sensitive,fl_lossy/ae4f0c19774f4cf9a2baac2100e4a6cf_9366/Superstar_Up_Shoes_Black_FW3699_01_standard.jpg" alt="img">
-                            <span class="nameshoes">SUPERSTAR UP SHOES<br>3,200,000₫</span>
+
+                        <div id="line2">
+                            <br>
+                            <hr style="border-width: 3px;">
+                            <br>
+                        </div>
+
+                        <div id="mlb">
+                            <h3>MLB</h3>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2020/06/giay-mlb-big-ball-chunky-screen-mule-32shs2011-50w-mau-trang-size-230-5ee97ff2b6c43-17062020092906.jpg" alt="img">
+                                    <span class="nameshoes"> MLB Big Ball Chunky Screen Mule 32SHS2011-50W White</span><br>
+                                    <span> 2,600,000₫</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2020/02/giay-sneaker-mlb-bigball-chunky-p-mau-trang-5e44b7a8caca0-13022020094248.jpg" alt="img">
+                                    <span class="nameshoes">Sneaker MLB BigBall Chunky P White Logo Dodgers</span><br>
+                                    <span> 2,900,000₫</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2020/04/giay-sneaker-mlb-big-bull-chunky-mickey-new-new-york-yankees-mau-trang-size-240-5e8c37489ebff-07042020151816.jpg"
+                                        alt="img">
+                                    <span class="nameshoes">Sneaker MLB Big Bull Chunky Mickey New York Yankees White</span><br>
+                                    <span> 3,400,000₫</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2020/07/mlb-new-mound-new-york-yankees-black-gold-5f18017416a9b-22072020160556.jpg" alt="img">
+                                    <span class="nameshoes">MLB New Mound New York Yankees Black/Gold</span><br>
+                                    <span> 1,250,000₫</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2020/09/giay-mlb-big-ball-chunky-mickey-new-york-yankees-mau-trang-size-230-5f57344e584c9-08092020143542.jpg" alt="img">
+                                    <span class="nameshoes">MLB Big Ball Chunky Mickey New York Yankees White</span><br>
+                                    <span> 3,650,000₫</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="line3">
+                            <br>
+                            <hr style="border-width: 3px;">
+                            <br>
+                        </div>
+
+                        <div id="gucci">
+                            <h3>Gucci</h3>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="https://images.us.christianlouboutin.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/1/9/0/christianlouboutin-spikesock-1190270_B026_1_1200x1200_1547553274.jpg" alt="img">
+                                    <span class="nameshoes">CHRISTIAN LOUBOUTIN Black Spike Sock Sneakers</span><br>
+                                    <span> 31,550,000₫</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1521230417/528892_DRW00_9522_002_100_0000_Light-Womens-Rhyton-Gucci-logo-leather-sneaker.jpg" alt="img">
+                                    <span class="nameshoes">Gucci Rhyton Logo Leather Sneaker</span><br>
+                                    <span> 23,800,000₫</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2019/12/giay-gucci-men-s-ace-embroidered-sneaker-mau-trang-5e04762f9f7ed-26122019155823.jpg" alt="img">
+                                    <span class="nameshoes">Gucci Men's Ace Embroidered Sneaker White</span><br>
+                                    <span> 15,000,000₫</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2019/12/giay-gucci-leather-slip-on-sneaker-with-bees-mau-den-5e08b4db284f9-29122019211451.jpg" alt="img">
+                                    <span class="nameshoes"> Gucci Leather Slip-on Sneaker With Bees Black</span><br>
+                                    <span> 15,500,000₫</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2020/01/giay-luoi-nam-gucci-mokassin-aus-leder-mit-webstreifen-mau-den-5e2514696b833-20012020094601.jpg" alt="img">
+                                    <span class="nameshoes"> Gucci Mokassin Aus Leder Mit Webstreifen</span><br>
+                                    <span> 10,750,000₫</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="line4">
+                            <br>
+                            <hr style="border-width: 3px;">
+                            <br>
+                        </div>
+
+                        <div id="puma">
+                            <h3>Puma</h3>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2020/08/giay-sneaker-puma-smash-v2-leather-365208-01-365215-01-mau-trang-5f24c3d381430-01082020082227.jpg" alt="img">
+                                    <span class="nameshoes"> Sneaker Puma Smash V2 Leather 365208-01/365215-01 White</span><br>
+                                    <span> 2,000,000₫</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/371570_26/Giy-Puma-12.jpg" alt="img">
+                                    <span class="nameshoes">Puma x Kang Daniel RS-X3 White</span><br>
+                                    <span> 2,850,000₫</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/370896-01/mrshopvn-giay-puma-roma-x-godfather-louis-den-370896-01-1.jpg" alt="img">
+                                    <span class="nameshoes">Puma Roma X Godfather Louis Black</span><br>
+                                    <span> 2,200,000₫</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2020/07/giay-the-thao-puma-releases-the-thunder-spectra-size-39-5efbffb32062b-01072020101459.jpg" alt="img">
+                                    <span class="nameshoes">Puma Releases The Thunder Spectra</span><br>
+                                    <span> 3,850,000₫</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/365347-51/mrshopvn-puma-suede-classic-navy-365347-51-0.jpg" alt="img">
+                                    <span class="nameshoes"> Puma Suede Classic Màu Xanh Navy</span><br>
+                                    <span> 2,250,000₫</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="line5">
+                            <br>
+                            <hr style="border-width: 3px;">
+                            <br>
+                        </div>
+
+                        <div id="vans">
+                            <h3>Vans</h3>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2020/08/giay-sneaker-vans-ward-low-top-sneaker-black-white-mau-den-trang-5f24e43b550d5-01082020104043.jpg" alt="img">
+                                    <span class="nameshoes"> Sneaker Vans Ward Low Top Sneaker Black/White</span><br>
+                                    <span> 1,500,000₫</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2020/08/giay-sneaker-vans-old-skool-black-white-vn000d3hy28-mau-den-trang-5f2765f8e1a45-03082020081848.jpg" alt="img">
+                                    <span class="nameshoes">Sneaker Vans Old Skool Black/White VN000D3HY28</span><br>
+                                    <span> 1,600,000₫</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2020/07/giay-sneaker-vans-style-36-marshmallow-blue-mau-trang-5f23da7453573-31072020154644.jpg" alt="img">
+                                    <span class="nameshoes">Sneaker Vans Style 36 Marshmallow Blue White </span><br>
+                                    <span> 2,200,000₫</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="https://cdn-images.farfetch-contents.com/15/45/15/74/15451574_27721338_600.jpg" alt="img">
+                                    <span class="nameshoes">Kenzo x Vans SK8-Hi Tulipes sneakers </span><br>
+                                    <span> 6,400,000₫</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="https://drake.vn/image/catalog/H%C3%ACnh%20content/vans-checker-flame/vans-checker-flame-6.jpg" alt="img">
+                                    <span class="nameshoes"> Sneakers Vans Sk8-Hi Checker Flame VN0A38GERX7</span><br>
+                                    <span> 1,950,000₫</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="line6">
+                            <br>
+                            <hr style="border-width: 3px;">
+                            <br>
+                        </div>
+
+                        <div id="converse">
+                            <h3>Converse</h3>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/347/923/products/568800c-3.jpg?v=1599930418920" alt="img">
+                                    <span class="nameshoes">Giày Converse Chuck 70 Popped Colour</span><br>
+                                    <span> 2,000,000₫</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="https://bizweb.dktcdn.net/100/347/923/products/166799v-4.jpg?v=1594275832907" alt="img">
+                                    <span class="nameshoes">Converse Run Star Hike Twisted Classic Foundational Canvas</span><br>
+                                    <span> 2,500,000₫</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/347/923/products/565202-5.png" alt="img">
+                                    <span class="nameshoes">Converse Chuck Taylor All Star Stargazer</span><br>
+                                    <span> 1,300,000₫</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="https://bizweb.dktcdn.net/thumb/grande/100/347/923/products/164092-6.png?v=1586782331637" alt="img">
+                                    <span class="nameshoes">Converse Chuck Taylor All Star Get Tubed Yellow</span><br>
+                                    <span> 1,500,000₫</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img id="dcv" src="https://cf.shopee.vn/file/acced6a906b9c292c5820b0808e1c4f9" alt="img">
+                                    <span class="nameshoes">Dép Converse</span><br>
+                                    <span> 700,000₫</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img id="slides" src="https://img.yes24.vn/Upload/ProductImage/2019/2010023_L.jpg" alt="img">
-                            <span class="nameshoes">ADILETTE SHOWER SLIDES<br>480,000₫</span>
-                        </div>
-                        <div class="col-md-3">
-                            <img id="MC" src="https://assets.adidas.com/images/w_600,f_auto,q_auto/7e78f6ca102a4ba8a2e8ab9d013e9870_9366/Giay_3MC_x_Disney_Sport_Goofy_Mau_djo_FV9881_01_standard.jpg" alt="img">
-                            <span class="nameshoes">3MC X DISNEY SPORT GOOFY SHOES<br>1,800,000₫</span>
-                        </div>
-                        <div class="col-md-3">
-                            <img id="edge" src="https://media.sssports.com/2000x2000/media/catalog/product/4/0/4051043576997_2.jpg" alt="img">
-                            <span class="nameshoes">EDGE XT SHOESS<br>2,800,000₫</span>
-                        </div>
-                        <div class="col-md-3">
-                            <img id="preda" src="https://assets.adidas.com/images/w_600,f_auto,q_auto/4291e6a7770a4ac88a73ab9700b4282b_9366/Predator_Mutator_20.1_Low_Firm_Ground_Boots_White_FW9182_01_standard.jpg" alt="img">
-                            <span class="nameshoes">PREDATOR MUTATOR 20.1 LOW FIRM GROUND BOOTS<br>4,500,000₫</span>
-                        </div>
+                    <div id="line7">
+                        <br>
+                        <hr style="border-width: 3px;">
+                        <br>
                     </div>
-
-                    <br>
-                    <hr style="border-width: 3px;">
-                    <br>
-
-                    <h3>Nike</h3>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="https://cdn.shopify.com/s/files/1/1626/5391/products/IMG_9329.jpg?v=1571439532" alt="img">
-                            <span class="nameshoes">Crepslocker Nike Air Jordan 1 UNC Patent Blue Chill & White Sneaker W<br>3,300,000₫</span>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="https://myshoes.vn/image/cache/data/Giay-Nike-Air-Max-270-Nam-Trang-Xanh-01-800x800_0.jpg" alt="img">
-                            <span class="nameshoes">Nike Air Max 270<br>2,900,000₫</span>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="https://giaygiare.vn/upload/sanpham/large/nike-air-more-uptempo-supreme-do-trang-nam-nu.jpg" alt="img">
-                            <span class="nameshoes">Nike Air Uptempo Supreme Red White<br>2,900,000₫</span>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="https://thesneakerhouse.com/wp-content/uploads/2018/08/giay-nike-air-max-97-ultra-17.jpg" alt="img">
-                            <span class="nameshoes">Nike Air Max 97<br>4,500,000₫</span>
-                        </div>
-                    </div>
-
-                    <br>
-                    <hr style="border-width: 3px;">
-                    <br>
-
-                    <h3>MLB</h3>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2020/06/giay-mlb-big-ball-chunky-screen-mule-32shs2011-50w-mau-trang-size-230-5ee97ff2b6c43-17062020092906.jpg" alt="img">
-                            <span class="nameshoes"> MLB Big Ball Chunky Screen Mule 32SHS2011-50W White<br>2,600,000₫</span>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2020/02/giay-sneaker-mlb-bigball-chunky-p-mau-trang-5e44b7a8caca0-13022020094248.jpg" alt="img">
-                            <span class="nameshoes">Sneaker MLB BigBall Chunky P White Logo Dodgers<br>2,900,000₫</span>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2020/04/giay-sneaker-mlb-big-bull-chunky-mickey-new-new-york-yankees-mau-trang-size-240-5e8c37489ebff-07042020151816.jpg"
-                                alt="img">
-                            <span class="nameshoes">Sneaker MLB Big Bull Chunky Mickey New York Yankees White<br>3,400,000₫</span>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2020/07/mlb-new-mound-new-york-yankees-black-gold-5f18017416a9b-22072020160556.jpg" alt="img">
-                            <span class="nameshoes">MLB New Mound New York Yankees Black/Gold<br>1,250,000₫</span>
-                        </div>
-                    </div>
-                    <br>
-                    <hr style="border-width: 3px;">
-                    <br>
-                    <h3>Gucci</h3>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="https://images.us.christianlouboutin.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/1/9/0/christianlouboutin-spikesock-1190270_B026_1_1200x1200_1547553274.jpg" alt="img">
-                            <span class="nameshoes">CHRISTIAN LOUBOUTIN Black Spike Sock Sneakers<br>31,550,000₫</span>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1521230417/528892_DRW00_9522_002_100_0000_Light-Womens-Rhyton-Gucci-logo-leather-sneaker.jpg" alt="img">
-                            <span class="nameshoes">Gucci Rhyton Logo Leather Sneaker<br>23,800,000₫</span>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2019/12/giay-gucci-men-s-ace-embroidered-sneaker-mau-trang-5e04762f9f7ed-26122019155823.jpg" alt="img">
-                            <span class="nameshoes">Gucci Men's Ace Embroidered Sneaker White<br>15,000,000₫</span>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2019/12/giay-gucci-leather-slip-on-sneaker-with-bees-mau-den-5e08b4db284f9-29122019211451.jpg" alt="img">
-                            <span class="nameshoes"> Gucci Leather Slip-on Sneaker With Bees Black<br>15,500,000₫</span>
-                        </div>
-                    </div>
-                    <br>
-                    <hr style="border-width: 3px;">
-                    <br>
-                    <h3>Puma</h3>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2020/08/giay-sneaker-puma-smash-v2-leather-365208-01-365215-01-mau-trang-5f24c3d381430-01082020082227.jpg" alt="img">
-                            <span class="nameshoes"> Sneaker Puma Smash V2 Leather 365208-01/365215-01 White<br>2,000,000₫</span>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/371570_26/Giy-Puma-12.jpg" alt="img">
-                            <span class="nameshoes">Puma x Kang Daniel RS-X3 White<br>2,850,000₫</span>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/370896-01/mrshopvn-giay-puma-roma-x-godfather-louis-den-370896-01-1.jpg" alt="img">
-                            <span class="nameshoes">Puma Roma X Godfather Louis Black<br>2,200,000₫</span>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2020/07/giay-the-thao-puma-releases-the-thunder-spectra-size-39-5efbffb32062b-01072020101459.jpg" alt="img">
-                            <span class="nameshoes">Puma Releases The Thunder Spectra<br>3,850,000₫</span>
-                        </div>
-                    </div>
-                    <br>
-                    <hr style="border-width: 3px;">
-                    <br>
-                    <h3>Vans</h3>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2020/08/giay-sneaker-vans-ward-low-top-sneaker-black-white-mau-den-trang-5f24e43b550d5-01082020104043.jpg" alt="img">
-                            <span class="nameshoes"> Sneaker Vans Ward Low Top Sneaker Black/White<br>1,500,000₫</span>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2020/08/giay-sneaker-vans-old-skool-black-white-vn000d3hy28-mau-den-trang-5f2765f8e1a45-03082020081848.jpg" alt="img">
-                            <span class="nameshoes">Sneaker Vans Old Skool Black/White VN000D3HY28<br>1,600,000₫</span>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2020/07/giay-sneaker-vans-style-36-marshmallow-blue-mau-trang-5f23da7453573-31072020154644.jpg" alt="img">
-                            <span class="nameshoes">Giày Sneaker Vans Style 36 Marshmallow Blue White Size 41<br>2,200,000₫</span>
-                        </div>
-
-                    </div>
-                    <br>
-                    <hr style="border-width: 3px;">
-                    <br>
-                    <h3>Converse</h3>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/347/923/products/568800c-3.jpg?v=1599930418920" alt="img">
-                            <span class="nameshoes">Giày Converse Chuck 70 Popped Colour<br>2,000,000₫</span>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="https://bizweb.dktcdn.net/100/347/923/products/166799v-4.jpg?v=1594275832907" alt="img">
-                            <span class="nameshoes">Converse Run Star Hike Twisted Classic Foundational Canvas<br>2,500,000₫</span>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/347/923/products/565202-5.png" alt="img">
-                            <span class="nameshoes">Converse Chuck Taylor All Star Stargazer<br>1,300,000₫</span>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="https://bizweb.dktcdn.net/thumb/grande/100/347/923/products/164092-6.png?v=1586782331637" alt="img">
-                            <span class="nameshoes">Converse Chuck Taylor All Star Get Tubed Yellow<br>1,500,000₫</span>
-                        </div>
-                    </div>
-                    <br>
-                    <hr style="border-width: 3px;">
-                    <br>
                 </div>
+
             </section>
         </div>
     </div>
 
-
+    <script src="index.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
