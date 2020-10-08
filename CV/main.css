@@ -1,5 +1,6 @@
 body {
     border: double 5px black;
+    cursor: context-menu;
 }
 
 .ava {
