@@ -16,61 +16,27 @@
 </head>
 
 <body>
-    <div class="main">
-        <div class="nav">
-            <nav class="nav__pc">
-                <ul class="nav-list">
-                    <li class="nav-left">
-                        <img src="img/iconshoes.png" alt="icon">
-                        <h2>Sneaker Shop</h2>
-                    </li>
-                    <li class="nav-mid">
-                        <form action="" autocomplete="off">
-                            <input type="text" name="search" placeholder="Search...">
-                        </form>
-                        <button class="TK">Tìm kiếm</button>
-                    </li>
-                    <li class="nav-right">
-                        <a href="login.html"><button>Đăng nhập | Đăng ký</button></a>
-                        <a href="cart.html">
-                            <div class="header__cart-wrap">
-                                <i class="header__cart-icon fas fa-cart-plus"></i>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="nav__bars-btn">
-                <i class="fas fa-bars"></i>
+    <div class="app">
+        <div class="menu">
+            <div class="menu-left">
+                <img src="img/iconshoes.png" alt="icon">
+                <h2>Sneaker Shop</h2>
             </div>
-            <div class="nav__overlay"></div>
-
-            <nav class="nav__mobile">
-                <li class="nav__mobile-left">
-                    <img src="img/iconshoes.png" alt="icon">
-                    <h2>Sneaker Shop</h2>
-                </li>
-                <li class="nav__mobile-mid">
-                    <form action="" autocomplete="off">
-                        <input type="text" name="search" placeholder="Search...">
-                    </form>
-                    <button class="TK">Tìm kiếm</button>
-                </li>
-                <li class="nav__mobile-right">
-                    <a href="login.html"><button>Đăng nhập | Đăng ký</button></a>
-                    <a href="cart.html">
-                        <div class="header__cart-wrap">
-                            <i class="header__cart-icon fas fa-cart-plus"></i>
-                        </div>
-                    </a>
-                </li>
-            </nav>
-
+            <div class="menu-mid">
+                <form action="" autocomplete="off">
+                    <input type="text" name="search" placeholder="Search...">
+                </form>
+                <button class="TK">Tìm kiếm</button>
+            </div>
+            <div class="menu-right">
+                <a href="login.html"><button>Đăng nhập | Đăng ký</button></a>
+                <a href="cart.html">
+                    <div class="header__cart-wrap">
+                        <i class="header__cart-icon fas fa-cart-plus"></i>
+                    </div>
+                </a>
+            </div>
         </div>
-
-
-
         <div class="category">
             <div class="trademark">
                 <ul>
@@ -121,14 +87,12 @@
             </div>
             <section>
                 <div class="container">
-                    <nav class="nav__pc-trademark">
-                        <ul class="tab">
-                            <li class="tab-item active" onclick="changeProductList('all-item', this)">Tất cả sản phẩm</li>
-                            <li class="tab-item" onclick="changeProductList('mlb', this)">Phổ biến</li>
-                            <li class="tab-item" onclick="changeProductList('nike', this)">Mới nhất</li>
-                            <li class="tab-item" onclick="changeProductList('mlb', this)">Bán chạy</li>
-                        </ul>
-                    </nav>
+                    <ul class="tab">
+                        <li class="tab-item active" onclick="changeProductList('all-item', this)">Tất cả sản phẩm</li>
+                        <li class="tab-item" onclick="changeProductList('mlb', this)">Phổ biến</li>
+                        <li class="tab-item" onclick="changeProductList('nike', this)">Mới nhất</li>
+                        <li class="tab-item" onclick="changeProductList('mlb', this)">Bán chạy</li>
+                    </ul>
                     <div id="all-item">
                         <div id="adidas">
                             <h3>Adidas</h3>
