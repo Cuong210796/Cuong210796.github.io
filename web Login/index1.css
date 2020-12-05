@@ -15,8 +15,7 @@ body {
 }
 
 img {
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-radius: 30px;
 }
 
 .btn1 {
